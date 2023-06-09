@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="#">Generate Numbers</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Generate QR Code</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Generate Password</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">BMI Calculator</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <ul class="generate__list">
+            <li class="generate__item">
+              <div class="number-generator">
+                <div class="generate-box">
+                  <div class="random subtitle" id="random">Random number</div>
+                  <div class="number">10</div>
+                  <div class="parameters">
+                    <div class="radio">
+                      <div class="parameter">
+                        <input
+                          class="radio__input range-input"
+                          type="radio"
+                          id="range-input"
+                          name="filed"
+                        />
+                        <label class="radio__label" for="range-input"
+                          >for nums</label
+                        >
+                      </div>
+
+                      <div class="range">
+                        <span>from</span>
+
+                        <input
+                          type="number"
+                          min="1"
+                          max="30"
+                          step="1"
+                          class="range__input min-number"
+                          value="1"
+                        />
+
+                        <span>to</span>
+
+                        <input
+                          type="number"
+                          min="1"
+                          max="30"
+                          step="1"
+                          class="range__input max-number"
+                          value="12"
+                        />
+                      </div>
+
+                      <div class="parameter">
+                        <input
+                          class="radio__input list-input"
+                          type="radio"
+                          id="range-input"
+                          name="filed"
+                        />
+                        <label class="radio__label" for="range-input"
+                          >for nums</label
+                        >
+                      </div>
+
+                      <input type="text" class="list-numbers js-list-number" />
+                    </div>
+                  </div>
+                  <button class="btn js-btn" id="save">Generate</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="generate__item">
+              <div class="qr-generate generate-box">
+                <p class="qr-generate__text subtitle">Enter your text or URL</p>
+                <input
+                  class="input-base"
+                  type="text"
+                  id="qrInput"
+                  placeholder="Text your URL"
+                />
+
+                <div id="imgBox">
+                  <img class="qr-generate__img" src="" id="qrImg" />
+                </div>
+
+                <button class="qr-generate__btn btn" id="qrBtn">
+                  Generate QR Code
+                </button>
+              </div>
+            </li>
+
+            <li class="generate__item">
+              <div class="qr-generate generate-box">
+                <p class="qr-generate__text subtitle">
+                  Generate a Random Password
+                </p>
+
+                <div class="password">
+                  <input
+                    class="password__input input-base"
+                    type="text"
+                    id="password"
+                    placeholder="Password"
+                  />
+                  <button class="password__btn" id="copyBtn">
+                    <img
+                      class="password__btn-icon"
+                      src="images/copy.svg"
+                      alt=""
+                      width="32"
+                    />
+                  </button>
+                </div>
+
+                <button class="qr-generate__btn btn" id="passwordBtn">
+                  Generate Password
+                </button>
+              </div>
+            </li>
+
+            
+            <!--      <li class="generate__item">
+              <div class="qr-generate generate-box">
+                <p class="qr-generate__text subtitle">
+                  Generate a Random Quote
+                </p>
+
+               <div class="quote-area">
+                <p class="quote">
+                  Если вам где-то не рады в рваных носках, то и в целых туда ходить не стоит
+                </p>
+               </div>
+               <div class="author">Джейсон Стэтхэм</div>
+
+                <button class="qr-generate__btn btn" id="quoteBtn">
+                  Generate Quote
+                </button>
+              </div>
+            </li>-->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

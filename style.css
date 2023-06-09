@@ -135,26 +135,49 @@ body {
   gap: 50px;
 }
 
+.input-base {
+  background-color: #8d54e94a;
+  padding: 10px;
+  height: 50px;
+  border-radius: 6px;
+  color: #eee;
+}
+
 /* menu */
 
 .menu {
   display: flex;
   justify-content: space-evenly;
-  padding: 30px;
-  border-radius: 50px 50px 0 0;
-  box-shadow: 0 0 20px #eee;
-  background-image: var(--main-bg-button);
 }
 
 .menu-link {
   color: #fcfcfd;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   transition: color 0.4s;
+  margin-bottom: 30px;
 }
 
 .menu-link:hover {
   color: #eeeeeeb1;
+}
+
+.menu-item {
+  margin-right: 50px;
+  background-image: var(--main-bg-box);
+  max-width: 520px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-img {
+  margin-bottom: 40px;
 }
 
 input[type="radio"] {
@@ -237,44 +260,68 @@ input[type="radio"] {
   gap: 50px;
 }
 
-.qr-generate__input {
-  background-color: #8d54e94a;
-  padding: 10px;
-  height: 50px;
-  border-radius: 6px;
-  color: #eee;
-}
-
 .qr-generate__img {
   margin: 0 auto;
 }
 
+/*  Generate a Random Password */
 
-/*  Generate a Random Password */ 
-
-.password__input{
+.password__input {
   width: 100%;
   padding-right: 40px;
-
 }
 
-.password{
+.password {
   position: relative;
 }
 
-
-.password__btn{
+.password__btn {
   height: 30px;
   width: 30px;
   z-index: 9;
   position: absolute;
-right: 10px;
-top: 10px;
-  
+  right: 10px;
+  top: 10px;
 }
 
+/* BMI Calculate*/
 
+.bmi__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+.bmi__btn {
+  display: flex;
+}
+
+.bmi__label {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bmi__input {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#heading {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#bmi-output {
+  width: fit-content;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #8e54e9;
+  margin: 5px auto 25px;
+}
 
 /* Media */
 
@@ -315,5 +362,3 @@ top: 10px;
     font-size: 16px;
   }
 }
-
-

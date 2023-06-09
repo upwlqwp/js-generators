@@ -1,5 +1,7 @@
 'use strict';
 
+/* Generate random numbers */
+
 const number = document.querySelector('.number'),
     parameters = document.querySelector('.parameters'),
     rangeInpit = document.querySelector('.range-input'),
@@ -8,6 +10,7 @@ const number = document.querySelector('.number'),
     listInput = document.querySelector('.list-input'),
     listNumbers = document.querySelector('.list-numbers'),
     btn = document.querySelector('.btn');
+
 
 parameters.addEventListener('change', () => {
     if (listInput.checked) {
@@ -35,7 +38,7 @@ btn.addEventListener('click', () => {
     }
 });
 
-/// generate qr
+/*    Generate QR    */
 
 const imgBox = document.getElementById('imgBox');
 const qrImg = document.getElementById('qrImg');
@@ -86,15 +89,73 @@ passwordBtn.addEventListener('click',
 )
 
 
+const copyBtn = document.getElementById('copyBtn')
+
+function copyPassword() {
+    passwordBox.select();
+    document.execCommand("copy");
+}
+
+copyBtn.addEventListener("click", copyPassword);
+
+/* quote  
+
+const quoteText = document.querySelector(".quote")
+const quoteBtn = document.getElementById("quoteBtn")
+
+function randomQuote() {
 
 
- const copyBtn = document.getElementById('copyBtn')
+    fetch("https://api.quotable.io/random").then(res => res.json()).then(result => {
+        console.log(result)
+        quoteText.innerText = result.content;
+    });
+
+}
+
+quoteBtn.addEventListener("click", randomQuote)
+*/
 
 
- function copyPassword() {
+/* BMI Calculator 
+function copyPassword() {
+    passwordBox.select();
+    document.execCommand("copy");
+}
 
-     passwordBox.select();
-     document.execCommand("copy");
- }
+copyBtn.addEventListener("click", copyPassword);
+*/
 
- copyBtn.addEventListener("click", copyPassword);
+
+const btnSubmit = document.getElementById('btnSubmit')
+const btnClear = document.getElementById('btnClear')
+
+function calculateBMI() {
+    const weight = document.getElementById('weight').value
+    const height = document.getElementById('height').value;
+
+    let bmi = (weight / (height * height) * 2).toFixed(2)
+
+
+    document.getElementById('heading').innerHTML = 'Your BMI is: '
+    document.getElementById('bmi-output').innerHTML = bmi
+}
+
+
+btnSubmit.addEventListener('click', calculateBMI );
+
+
+
+
+
+btnClear.addEventListener('click', function reload() {
+    window.location.reload()
+
+});
+
+
+
+
+/*
+
+*/

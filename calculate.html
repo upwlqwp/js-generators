@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="#">Generate Numbers</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Generate QR Code</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Generate Password</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">BMI Calculator</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <ul class="generate__list">
+        
+
+            <li class="generate__item">
+              <div class="bmi generate-box">
+                <p class="bmi subtitle">BMI Calculator</p>
+
+                <div class="bmi__wrapper">
+                  <label class="bmi__label" for="weight">
+                    
+                    <input
+                      class="bmi__input input-base"
+                      type="number"
+                      id="weight"
+                      placeholder="Weight (lbs)"
+                    />
+                  </label>
+                  <label class="bmi__label" for="height">
+                   
+                    <input
+                      class="bmi__input input-base"
+                      type="number"
+                      id="height"
+                      placeholder=" Height (in)"
+                    />
+                  </label>
+                </div>
+                <div>
+                  <h4 id="heading"></h4>
+                  <span id="bmi-output">1</span>
+                  <span id="message"></span>
+                </div>
+
+                <div class="bmi__btn">
+                  <button class="btn" id="btnSubmit">Submit</button>
+                  <button class="btn" id="btnClear">Clear</button>
+                </div>
+
+               
+              </div>
+            </li>
+         
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
