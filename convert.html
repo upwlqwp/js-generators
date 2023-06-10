@@ -15,17 +15,9 @@
         <nav class="nav">
           <ul class="menu">
             <li class="menu-item">
-              <a class="menu-link" href="#">Generate Numbers</a>
+              <a class="menu-link" href="#">Convert Rates</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Generate QR Code</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">Generate Password</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">BMI Calculator</a>
-            </li>
+           
           </ul>
         </nav>
       </div>
@@ -34,16 +26,59 @@
     <main class="main">
       <section class="section">
         <div class="container">
-          <ul class="generate__list">
+ <div class="rates-converter">
            
+   <ul class="rates">
+     <li class="rates__item card card-box">
+       <span class="rates__item-title">Rate USD</span>
+       <div class="rates__item-value" data-value="USD">---</div>
+     </li>
+     <li class="rates__item card card-box">
+       <span class="rates__item-title">Rate EUR</span>
+       <div class="rates__item-value" data-value="EUR">---</div>
+     </li>
+     <li class="rates__item card card-box">
+       <span class="rates__item-title">Rate AMD</span>
+       <div class="rates__item-value" data-value="AMD">---</div>
+     </li>
+   </ul>
+   
+   
+   <div class="value">
+     <div class="value__item">
+       <label class="value__item-label" for="name">Output
+       </label>
+       <select class="value__item-input" disabled="disabled" id="exampleFormControlSelect1">
+         <option value="RUB" selected> RUB - rubles</option>
+       </select>
+     </div>
+   
+     <div class="value__item">
+       <label class="value__item-label" for="name">Input</label>
+       <select class="value__item-input"  id="select" id="exampleFormControlSelect1">
+         <option value="USD" selected> USD - dollars</option>
+         <option value="EUR" selected> EUR - eures</option>
+         <option value="AMD" selected> AMD - drams</option>
+       </select>
+     </div>
+   
+   <div class="value__item">
+     <input class="value__item-input" id="input" type="number" id="name" autofocus>
+   
+     <input class="value__item-input" type="number"  id="result" id="name">
+   </div>
+   
+   
+   </div>
+ </div>
 
-           
-          </ul>
+
+
         </div>
       </section>
     </main>
 
     <footer class="footer"></footer>
-    <script type="module" src="main.js"></script>
+    <script src="convert.js"></script>
   </body>
 </html>
