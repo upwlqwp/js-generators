@@ -147,7 +147,7 @@ body {
 
 .input-base {
   background-color: #8d54e94a;
-  padding: 10px;
+  padding: 15px;
   height: 50px;
   border-radius: 6px;
   color: #eee;
@@ -157,6 +157,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 2px;
+  padding: 12px 0;
   background: var(--subtitle);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -403,6 +404,8 @@ input[type="radio"] {
   background-image: var(--main-bg-box);
   box-shadow: 0 0 20px #eee;
   padding: 50px 40px;
+  border-radius: 50px 6px 50px 6px;
+  box-shadow: 0 0 20px #1a1a1a;
 }
 
 .rates__item{
@@ -428,7 +431,18 @@ input[type="radio"] {
 }
 
 
+/* temperature converter*/
 
+.temperature{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#temperatureConvertBtn{
+  cursor: pointer;
+}
 
 
 
@@ -512,7 +526,33 @@ input[type="radio"] {
     width: fit-content;
    margin: 15px auto;
   }
+
+
+  .temperature{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 912px){
 

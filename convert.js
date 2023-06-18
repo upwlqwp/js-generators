@@ -1,5 +1,7 @@
 'use strict';
 
+// convert rates
+
 const rates = { };
 
 const elementUSD = document.querySelector('[data-value="USD"]');
@@ -68,3 +70,29 @@ function convertRates(){
 }
 
 
+// convert Celsius to Fahrenheit
+
+
+
+const celsius = document.querySelector('#celsius'),
+      fahrenheit = document.querySelector('#fahrenheit'),
+      temperatureConvertBtn = document.querySelector('#temperatureConvertBtn')
+
+celsius.addEventListener('input', () => {
+    fahrenheit.value = ((celsius.value * 9) / 5 + 32).toFixed(2)
+
+   if(!celsius.value) fahrenheit.value = '';
+
+
+})
+
+
+
+    fahrenheit.addEventListener('input', () => {
+        celsius.value = (((fahrenheit.value - 32) * 5 ) / 9).toFixed(2)
+    })
+
+   temperatureConvertBtn.addEventListener('click', function reload() {
+        window.location.reload()
+    
+    });
