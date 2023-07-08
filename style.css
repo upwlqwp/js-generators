@@ -220,7 +220,7 @@ transition:opacity 0.4s ease-in-out ;
 
 .header__title{
   text-align: center;
-  margin: 50px auto;
+  margin: 50px auto 20px;
     text-transform: uppercase;
     font-size: 38px;
     font-weight: 700;
@@ -270,6 +270,7 @@ transition:opacity 0.4s ease-in-out ;
   align-items: center;
   text-align: center;
   padding: 30px ;
+  margin: 20px;
   border-radius: 47% 53% 63% 37% / 38% 40% 60% 62%;
   /* border-radius: 75% 25% 66% 34% / 50% 69% 31% 50%; */
   /* border-radius: 25% 46% 24% 51% / 74% 75% 25% 25%; */
